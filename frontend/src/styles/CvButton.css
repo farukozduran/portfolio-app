@@ -1,0 +1,40 @@
+.cv-floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 12px 18px;
+    border-radius: 30px;
+
+    background: var(--cvButtonBg);
+    color: var(--cvButtonText);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--heading);
+    font-size: 20px;
+
+    box-shadow: 0 8px 20px var(--cvButtonShadow);
+
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.cv-floating-btn.home {
+    position: static;
+    margin: 0px 20px;
+    padding: 15px 22px;
+    font-size: 25px;
+
+
+    width: fit-content;
+}
+
+.cv-floating-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 25px var(--text-h);
+    color: var(--cvButtonText);
+}
+
+.cv-floating-btn:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,79 @@
+.project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+    /* Gradient Background */
+    background: linear-gradient(145deg, #EEFABD, #80deea);
+    color: #222;
+
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.project-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #80deea, #EEFABD);
+}
+
+.project-title {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.project-description {
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.project-tech {
+    margin-bottom: 15px;
+    color: #555;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #6984A9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    background-color: #263B6A;
+    transform: scale(1.05);
+}

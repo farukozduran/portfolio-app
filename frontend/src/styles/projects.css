@@ -1,0 +1,21 @@
+.projects-page{
+    padding: 50px 20px;
+    background: transparent;
+    max-height: 100vh;
+}
+
+.projects-header{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #497ebb;
+    letter-spacing: 1px;
+    color: var(--text-h);
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}

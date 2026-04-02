@@ -1,0 +1,24 @@
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    color: var(--accent);
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
