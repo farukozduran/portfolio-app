@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProjects } from "../services/api";
 import ProjectCard from "../components/ProjectCard";
-import "../styles/Projects.css";
+import "../styles/projects.css";
 
 function Projects() {
   const fakeData = [
