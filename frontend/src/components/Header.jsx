@@ -19,7 +19,7 @@ function Header() {
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Home
+              home
             </NavLink>
           </li>
           <li>
@@ -27,7 +27,7 @@ function Header() {
               to="/about"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              About
+              about
             </NavLink>
           </li>
           <li>
@@ -35,7 +35,7 @@ function Header() {
               to="/projects"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Projects
+              projects
             </NavLink>
           </li>
           <li>
@@ -43,16 +43,16 @@ function Header() {
               to="/contact"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Contact
+              contact
             </NavLink>
           </li>
         </ul>
       </nav>
 
-      <label class="ui-switch">
+      <label className="ui-switch">
         <input type="checkbox" onChange={() => setDark(!dark)} />
-        <div class="slider">
-          <div class="circle"></div>
+        <div className="slider">
+          <div className="circle"></div>
         </div>
       </label>
     </header>

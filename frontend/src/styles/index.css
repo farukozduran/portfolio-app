@@ -33,6 +33,7 @@
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
   --btnFontStyle: "Montserrat", sans-serif;
+  --courier: "Courier New", Courier, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;

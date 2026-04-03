@@ -1,0 +1,36 @@
+.exp-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-top: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--bg);
+}
+
+/* Header */
+.exp-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.exp-header:hover {
+    background: var(--accent-bg);
+}
+
+/* Body (hidden state) */
+.exp-body {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+/* Body (expanded state) */
+.exp-card.open .exp-body {
+    max-height: 200px; /* large enough to show content */
+    padding: 15px 20px;
+    opacity: 1;
+}
